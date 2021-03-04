@@ -1,0 +1,99 @@
+$gray-color: #f1f1f1;
+$active-color: #FF0000;
+
+#textru {
+    /**
+     * Таблица заказов
+     *
+     */
+    &_table {
+        display: none;
+
+        .title {
+            width: 50%;
+        }
+
+        tr:hover {
+            background-color: $gray-color;
+        }
+
+        td {
+            h4 {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            em {
+                font-style: italic;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            a.button {
+                float: right;
+            }
+
+            div.notice {
+                display: block;
+                margin-top: 4px;
+            }
+
+            .row-actions {
+                .spinner {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .order_row {
+            .show_documents {
+                display: inline-block;
+            }
+
+            .hide_documents {
+                display: none;
+            }
+
+            &.opened {
+                .show_documents {
+                    display: none;
+                }
+
+                .hide_documents {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    /**
+     * Паджинатор страниц заказов
+     *
+     */
+    &_paginator {
+        display: none;
+
+        a {
+            margin: 2px;
+            padding: 4px;
+            line-height: 28px;
+
+            &.active {
+                color: $active-color;
+                border: 1px solid $gray-color;
+            }
+        }
+    }
+
+    /**
+     * Надпись о том, что заказов нет
+     *
+     */
+    &_empty_table {
+        margin: 24px;
+        text-align: center;
+        display: none;
+    }
+}
