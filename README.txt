@@ -1,4 +1,14 @@
-# TextRuPosting
+=== TextRuPosting ===
+
+Requires at least: 4.7  
+Tested up to: 5.9  
+Requires PHP: 7.2  
+Stable tag: 1.0.0  
+License: MIT  
+Tags: textruposting, textru  
+Contributors: textru  
+
+Плагин для взаимодействия WP-сайта с биржей контента [text.ru](https://text.ru) 
 
 > **Внимание!**
 >
@@ -7,17 +17,7 @@
 > сделайте резервную копию файлов сайта, его базы данных и иные действия, характерные для вашего сайта, для
 > того чтобы можно было восстановить его работоспособность при возникновении любых непредвиденных ситуаций.
 
-Requires at least: 4.7  
-Tested up to: 5.9  
-Requires PHP: 7.2  
-Stable tag: 1.0.0  
-License: [MIT](LICENSE)  
-Tags: textruposting, textru  
-Contributors: textru  
-
-Плагин для взаимодействия WP-сайта с биржей контента [text.ru](https://text.ru) 
-
-## Description
+=== Description ===
 При работе плагин взаимодействует посредством открытого API с программной платформой [text.ru](https://text.ru).
 И в процессе работы отправляет следующие данные:
 - токен пользователя, полученный со страницы [https://text.ru/api-check]();
@@ -72,3 +72,5 @@ Contributors: textru
 - установите dev-зависимости командой ```npm install```
 - осуществите сборку файлов командой ```npm run build```
 - для отслеживания изменений в коде в режиме реального времени используйте команду ```npm run watch```
+
+
